@@ -1,0 +1,36 @@
+.mysites-settings th{
+	display: none;
+}
+.mysites-sortable{
+	border:1px solid #000;
+	text-align: left;
+}
+.mysites-sortable-row{
+	border:1px solid #ffffff;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: center;
+	background:#f7f7f7;
+}
+.mysites-sortable > div:nth-child(even){
+	background:#f0f0f0;
+}
+.mysites-sortable-row > div{
+	flex: 1 1 50%;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+	padding:5px;
+}
+.mysites-sortable-row > div.mysites-moverow{
+	flex-grow: 0;
+	max-width:50px;
+	min-width:50px;
+	text-align: center;
+	cursor:grab;
+}
+.mysites-sortable-row > div.mysites-moverow:active{
+	cursor:grabbing;
+}
